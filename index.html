@@ -789,16 +789,16 @@ const LESSONS = [
   },
   {
     sec:"9.-3)-B)注8 過去形の共通点",
-    prompt:'下の３つの英文には「過去形」がある（下線）。それぞれの文を訳しなさい。また、これらの「過去形」に共通しているものは何か２語で書きなさい。',
+    prompt:'下の３つの英文の「過去形」に下線を引き、それぞれの文を訳しなさい。また、これらの「過去形」に共通しているものは何か２語で書きなさい。',
     ex:[
-      {t:"1", s:"I <u>called</u> him yesterday afternoon."},
-      {t:"2", s:"<u>Would</u> you sit down, please?"},
-      {t:"3", s:"If I <u>had</u> any money now, I’d buy this."}
+      {t:"1", s:"I called him yesterday afternoon."},
+      {t:"2", s:"Would you sit down, please?"},
+      {t:"3", s:"If I had any money now, I’d buy this."}
     ],
     rows:[
-      ["１", '私は昨日の午後に彼に電話しました'],
-      ["２", 'どうぞお座りになってください'],
-      ["３", 'もし今お金があれば、これを買うんだけど'],
+      ["１", '<span class="en">I <u>called</u> him yesterday afternoon.</span><br>私は昨日の午後に彼に電話しました'],
+      ["２", '<span class="en"><u>Would</u> you sit down, please?</span><br>どうぞお座りになってください'],
+      ["３", '<span class="en">If I <u>had</u> any money now, I’d buy this.</span><br>もし今お金があれば、これを買うんだけど'],
       ["共通しているもの", '<b>距離感</b>（現実からの隔たり）']
     ],
     note:'１は「時間の距離」、２は「相手との距離＝ていねいさ」、３は「現実との距離＝仮定」。どれも過去形が「今・ここ」から離す働きをしている。'
@@ -1587,10 +1587,10 @@ const LESSONS = [
   },
   {
     sec:"21.-3) the ＋ 形容詞",
-    prompt:'下の英語の下線部分を日本語に訳しなさい。また、下の空欄に適切な語句を入れて文を完成させなさい。<br><span class="en">the</span>＋<span class="blank"></span>は<span class="blank"></span>になる。',
-    ex:[{t:"", s:"<u>The old and the new</u> exist side by side in harmony."}],
+    prompt:'下の英文の〈<span class="en">the</span>＋形容詞〉に当たる部分に下線を引き、その部分を日本語に訳しなさい。また、下の空欄に適切な語句を入れて文を完成させなさい。<br><span class="en">the</span>＋<span class="blank"></span>は<span class="blank"></span>になる。',
+    ex:[{t:"", s:"The old and the new exist side by side in harmony."}],
     rows:[
-      ["下線部の訳", '古いものと新しいもの'],
+      ["下線部の訳", '<span class="en"><u>The old and the new</u> exist side by side in harmony.</span><br>古いものと新しいもの'],
       ['<span class="en">the</span>＋何', '形容詞'],
       ["何になる", '名詞（「〜なもの」「〜な人々」）']
     ],
@@ -1784,10 +1784,10 @@ const LESSONS = [
   },
   {
     sec:"22.-4) a ＋ 人名",
-    prompt:'下の英文の下線部分を訳しなさい。',
-    ex:[{t:"", s:"There was a call for you from <u>a Mr. Davis</u>."}],
+    prompt:'下の英文の〈<span class="en">a</span>＋人名〉に当たる部分に下線を引き、その部分を日本語に訳しなさい。',
+    ex:[{t:"", s:"There was a call for you from a Mr. Davis."}],
     rows:[
-      ["下線部の訳", 'デイビスさんという方（から）']
+      ["下線部の訳", '<span class="en">There was a call for you from <u>a Mr. Davis</u>.</span><br>デイビスさんという方（から）']
     ],
     note:'〈<span class="en">a</span>＋人名〉は「〜という名の（話し手の知らない）人」。'
   },
@@ -23782,12 +23782,12 @@ const LESSONS = [
     sec:"212.-1) 練習",
     prompt:'下のセンテンスの従位節に下線を引き、名詞節か副詞節か示しなさい。名詞節の場合は、節全体が主語、目的語、補語の内のどれで使われているのか示しなさい。',
     ex:[
-      {t:"1", s:'I knew <u>that he was alive</u>.', j:"彼が生きているということは知っていました"},
-      {t:"2", s:'Can you tell me <u>when he left</u>?', j:"いつ彼が出かけたのか教えて？"}
+      {t:"1", s:'I knew that he was alive.', j:"彼が生きているということは知っていました"},
+      {t:"2", s:'Can you tell me when he left?', j:"いつ彼が出かけたのか教えて？"}
     ],
     rows:[
-      ["1", '<span class="en">that he was alive</span> ＝ <b>名詞節</b>／<span class="en">knew</span> の<b>目的語</b>'],
-      ["2", '<span class="en">when he left</span> ＝ <b>名詞節</b>／<span class="en">tell</span> の<b>目的語</b>（<span class="en">me</span> が間接目的語）']
+      ["1", '<span class="en">I knew <u>that he was alive</u>.</span><br><span class="en">that he was alive</span> ＝ <b>名詞節</b>／<span class="en">knew</span> の<b>目的語</b>'],
+      ["2", '<span class="en">Can you tell me <u>when he left</u>?</span><br><span class="en">when he left</span> ＝ <b>名詞節</b>／<span class="en">tell</span> の<b>目的語</b>（<span class="en">me</span> が間接目的語）']
     ],
     note:'2 の <span class="en">when</span> は「いつ〜か」の疑問詞。「〜のとき」の副詞節ではない点に注意。'
   },
@@ -23808,16 +23808,16 @@ const LESSONS = [
     sec:"212.-2) 練習",
     prompt:'下のセンテンスの接続詞（関係詞）はどれか答えなさい。また、形容詞節（関係詞節）全体に下線を引き、それが修飾している語（句）に二重の下線を引きなさい。そして、それぞれの関係詞が三つの内どの種類かを書きなさい。',
     ex:[
-      {t:"1", s:'I know <u>a lot of people</u> <u>who live in Los Angeles</u>.', j:"ロスに住んでいる人をたくさん知っています"},
-      {t:"2", s:'This is <u>the only paper</u> <u>that covers this news</u>.', j:"これはこのニュースを載せている唯一の新聞です"},
-      {t:"3", s:'The postcard was written in <u>German</u>, <u>which language I knew well</u>.', j:"その絵ハガキはドイツ語で書かれていて、その言葉を非常によく知っていました"},
-      {t:"4", s:'This is <u>the village</u> <u>where I was born</u>.', j:"これは私が生まれた村です"}
+      {t:"1", s:'I know a lot of people who live in Los Angeles.', j:"ロスに住んでいる人をたくさん知っています"},
+      {t:"2", s:'This is the only paper that covers this news.', j:"これはこのニュースを載せている唯一の新聞です"},
+      {t:"3", s:'The postcard was written in German, which language I knew well.', j:"その絵ハガキはドイツ語で書かれていて、その言葉を非常によく知っていました"},
+      {t:"4", s:'This is the village where I was born.', j:"これは私が生まれた村です"}
     ],
     rows:[
-      ["1", '<span class="en">who</span>／関係<b>代名詞</b>／先行詞 <span class="en">a lot of people</span>'],
-      ["2", '<span class="en">that</span>／関係<b>代名詞</b>／先行詞 <span class="en">the only paper</span>'],
-      ["3", '<span class="en">which</span>（<span class="en">which language</span>）／関係<b>形容詞</b>／先行詞 <span class="en">German</span>'],
-      ["4", '<span class="en">where</span>／関係<b>副詞</b>／先行詞 <span class="en">the village</span>']
+      ["1", '<span class="en">I know <span style="text-decoration-line:underline;text-decoration-style:double;">a lot of people</span> <u>who live in Los Angeles</u>.</span><br><span class="en">who</span>／関係<b>代名詞</b>／先行詞 <span class="en">a lot of people</span>'],
+      ["2", '<span class="en">This is <span style="text-decoration-line:underline;text-decoration-style:double;">the only paper</span> <u>that covers this news</u>.</span><br><span class="en">that</span>／関係<b>代名詞</b>／先行詞 <span class="en">the only paper</span>'],
+      ["3", '<span class="en">The postcard was written in <span style="text-decoration-line:underline;text-decoration-style:double;">German</span>, <u>which language I knew well</u>.</span><br><span class="en">which</span>（<span class="en">which language</span>）／関係<b>形容詞</b>／先行詞 <span class="en">German</span>'],
+      ["4", '<span class="en">This is <span style="text-decoration-line:underline;text-decoration-style:double;">the village</span> <u>where I was born</u>.</span><br><span class="en">where</span>／関係<b>副詞</b>／先行詞 <span class="en">the village</span>']
     ],
     note:'原典 3 は <span class="en">The postcard was written in German, which language I happened to know quite well.</span>'
   },
@@ -23826,11 +23826,11 @@ const LESSONS = [
     prompt:'下の説明文の（　）に適切な語句を入れなさい。また、下のセンテンスの接続詞がどれか答え、副詞節全体に下線を引きなさい。',
     ex:[
       {t:"1", s:'接続詞に導かれた副詞節は、文全体の中で副詞の役割を果たし、副詞として（<span class="blank"></span>）（<span class="blank"></span>）（<span class="blank"></span>）（<span class="blank"></span>）（<span class="blank"></span>）（<span class="blank"></span>）などを表す。', j:"副詞節が表す意味"},
-      {t:"2", s:'Stop writing <u>when the bell rings</u>.', j:"ベルが鳴ったら書くのをやめてください"}
+      {t:"2", s:'Stop writing when the bell rings.', j:"ベルが鳴ったら書くのをやめてください"}
     ],
     rows:[
       ["1", '<b>時</b>／<b>目的</b>／<b>結果</b>／<b>理由（原因）</b>／<b>譲歩</b>／<b>条件</b>（ほかに<b>場所</b>・<b>様態</b>）'],
-      ["2", '接続詞 when／副詞節 when the bell rings']
+      ["2", '<span class="en">Stop writing <u>when the bell rings</u>.</span><br>接続詞 <span class="en">when</span>／副詞節 <span class="en">when the bell rings</span>']
     ],
     note:'227. の一覧では 時・目的・結果・理由・譲歩・場所・様態・条件 の 8 種類に整理されている。'
   }
@@ -25069,16 +25069,16 @@ const LESSONS = [
   },
   {
     sec:"228.-5) 注4, 228.-7)",
-    prompt:'下線のある名詞に冠詞がないのはなぜか説明しなさい。また、（　）に適切な英語を書きなさい。',
+    prompt:'下の英文で、無冠詞で補語になっている名詞に下線を引き、冠詞がない理由を説明しなさい。また、（　）に適切な英語を書きなさい。',
     ex:[
-      {t:"1", s:'While he was in Germany, he was taken <u>prisoner</u>.<br>The terrorists took the people <u>hostage</u>.', j:"説明"},
+      {t:"1", s:'While he was in Germany, he was taken prisoner.<br>The terrorists took the people hostage.', j:"説明"},
       {t:"2", s:'(<span class="blank"></span>), you’ll enjoy it.', j:"いったん始めれば、あなたはそれを楽しむだろう"},
       {t:"3", s:'(<span class="blank"></span>), he looked away.', j:"彼を見る度に、彼は顔をそむけました"},
       {t:"4", s:'(<span class="blank"></span>), he seemed friendly enough.', j:"最初に彼に会ったときは、彼は気さくそうでした"},
       {t:"5", s:'She smiled (<span class="blank"></span>).', j:"彼女は紹介される度に笑顔を見せました"}
     ],
     rows:[
-      ["1", '<span class="en">prisoner・hostage</span> は「捕虜という<b>身分・状態</b>」を示す<b>補語</b>で、特定の一人の人間を指す普通名詞として使われていないため無冠詞になる。'],
+      ["1", '<span class="en">While he was in Germany, he was taken <u>prisoner</u>.<br>The terrorists took the people <u>hostage</u>.</span><br><span class="en">prisoner・hostage</span> は「捕虜という<b>身分・状態</b>」を示す<b>補語</b>で、特定の一人の人間を指す普通名詞として使われていないため無冠詞になる。'],
       ["2", '<span class="en">Once you begin</span>, you’ll enjoy it.'],
       ["3", '<span class="en">Every time I looked at him</span>, he looked away.'],
       ["4", '<span class="en">The first time I met him</span>, he seemed friendly enough.'],
